@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#550463"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="20dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ladoUno"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/valorLadoUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valorUno"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ladoDos"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/valorLadoDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valorDos"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/baseUno"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/valorBaseUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valorBaseUno"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alturaUno"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/valorAlturaUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/valorAlturaUno"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioAreaRectangulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="área rectángulo"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioAreaTriangulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="área triángulo"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#9F0E04"
+        android:onClick="calcularAreas"
+        android:text="@string/send"
+        android:textAllCaps="true"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+</LinearLayout>
