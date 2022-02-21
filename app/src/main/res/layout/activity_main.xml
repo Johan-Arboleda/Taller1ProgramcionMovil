@@ -105,14 +105,14 @@
     </RadioGroup>
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="#9F0E04"
         android:onClick="calcularAreas"
         android:text="@string/send"
         android:textAllCaps="true"
-        app:cornerRadius="20dp" />
+        app:cornerRadius="22dp" />
 
     <TextView
         android:id="@+id/resultado"
@@ -122,4 +122,30 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textStyle="bold" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="guardarDatos"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/btnCargarDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cargarDatos"
+        android:text="Cargar Dato Guardado" />
+
+    <TextView
+        android:id="@+id/cargarDato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dato Guardado"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+
 </LinearLayout>
+
