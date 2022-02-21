@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (rectangulo.isChecked()){
-            int sideOne = Integer.parseInt(ladoUno.getText().toString());
-            int sideTwo = Integer.parseInt(ladoDos.getText().toString());
+            float sideOne = Float.parseFloat(ladoUno.getText().toString());
+            float sideTwo = Float.parseFloat(ladoDos.getText().toString());
             resultado.setText(String.valueOf(sideOne*sideTwo));
 
         }
